@@ -46,7 +46,7 @@ public class WebForm {
 		DatePicker.sendKeys(Keys.RETURN);
 		
 		WebElement SubmitButton= driver.findElement(By.xpath("/html/body/div/form/div/div[8]/a"));
- SubmitButton.click();
+                SubmitButton.click();
  
         WebDriverWait wait= new WebDriverWait(driver,10);
         WebElement alert= wait.until((ExpectedConditions.visibilityOfElementLocated(By.className("alert"))));
